@@ -550,12 +550,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGNING_REQUIRED = "";
 				CODE_SIGN_ENTITLEMENTS = DemoSDK_AppStore/TienKiemMobileDebug.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = C48HYS5WZ8;
+				DEVELOPMENT_TEAM = TX8U89X44Q;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = TX8U89X44Q;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -595,7 +595,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vn.gosu.devapps;
 				PRODUCT_NAME = TienKiemMobile;
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = 929dev;
+				PROVISIONING_PROFILE_SPECIFIER = "319-dev";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "devapps-trantrongkien";
 				SWIFT_OBJC_BRIDGING_HEADER = "DemoSDK_AppStore/DemoSDK_AppStore-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";

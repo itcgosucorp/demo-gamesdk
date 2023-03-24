@@ -9,7 +9,6 @@
 #import "UserProfileResponse.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
-#import <FBSDKShareKit/FBSDKShareKit.h>
 
 @interface FacebookManager : NSObject {
     
