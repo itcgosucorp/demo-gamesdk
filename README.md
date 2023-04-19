@@ -278,6 +278,9 @@ IAPDataRequest *iapData = [[IAPDataRequest alloc]
 if([[GameSDK sharedInstance] deleteAccountAllow]) {
     [[GameSDK sharedInstance] deleteAcount:self andCallback:^(NSDictionary *response) {
         NSLog(@"response = %@", response);
+        //demo: response = {code:0, message: "succeed"}
+        //code = 0: failed
+        //code = 1: succeed
     }];
 }
 ```
