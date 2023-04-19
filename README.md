@@ -272,7 +272,22 @@ IAPDataRequest *iapData = [[IAPDataRequest alloc]
 //andMainView: use as main view controller
 //andIAPDelegate: use as IAP Delegate
 ```
+## Delete Account API
+```objectivec
+//Check if deleting account is enabled. return TRUE/FALSE
+[[GameSDK sharedInstance] deleteAccountAllow]
+//call delete account
+[[GameSDK sharedInstance] deleteAcount:self andCallback:^(NSDictionary *response) {
+    NSLog(@"response = %@", response);
+}];
 
+if([[GameSDK sharedInstance] deleteAccountAllow]) {
+    [[GameSDK sharedInstance] deleteAcount:self andCallback:^(NSDictionary *response) {
+        NSLog(@"response = %@", response);
+    }];
+}
+```
+  
 # API Tracking Events
 1. Tracking AppOpen On GameSDK
 ```objectivec
