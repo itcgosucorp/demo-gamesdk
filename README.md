@@ -254,7 +254,7 @@ didReceiveNotificationResponse:(UNNotificationResponse *)response
 ```objectivec
 IAPDataRequest *iapData = [[IAPDataRequest alloc] 
           initWithData:_userName 
-          andOrderId:orderID 
+          andOrderId:@"" 
           andOrderInfo:orderInfo 
           andServerID:server 
           andAmount:amount 
@@ -263,6 +263,17 @@ IAPDataRequest *iapData = [[IAPDataRequest alloc]
           andRoleID:character 
           andExtraInfo:extraInfo];
 [[GameSDK sharedInstance] showIAP:(IAPDataRequest *)iapData andMainView:self andIAPDelegate:self];
+
+/*
+* _userName: Account name used to login to the SDK
+* OrderId: Has an empty value
+* ServerID: Game server ID
+* Amount: Determined as the price of the product
+* AppleProductID: The in-app purchase product identifier
+* AppleShareSecrect: Has an empty value
+* RoleID: in-game character identification
+* ExtraInfo: Extended parameter support for game server transaction validation
+*/
 //andMainView: use as main view controller
 //andIAPDelegate: use as IAP Delegate
 ```
